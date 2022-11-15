@@ -6,7 +6,7 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
     # open session in view
-    open-in-view: false
+    open-in-view: true
 
     properties:
       hibernate:
