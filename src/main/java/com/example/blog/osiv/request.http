@@ -1,0 +1,27 @@
+### Member 생성
+POST http://localhost:8080/osiv/member
+Content-Type: application/json
+
+{
+  "name" : "name"
+}
+
+### Team 생성
+POST http://localhost:8080/osiv/team
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "teams" : [
+    {
+      "name" : "name1"
+    },
+    {
+      "name" : "name2"
+    }
+  ]
+}
+
+### Team 조회
+GET http://localhost:8080/osiv/team/1
+Accept: application/json

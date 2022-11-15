@@ -1,1 +1,27 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
+    # open session in view
+    open-in-view: false
+
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    generate-ddl: true
+  datasource:
+    url:
+    driver-class-name: com.mysql.jdbc.Driver
+    username:
+    password:
+logging:
+  level:
+    #    root: DEBUG
+    org:
+      springframework:
+        transaction:
+          interceptor: TRACE
